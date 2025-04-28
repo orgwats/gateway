@@ -7,7 +7,7 @@ export class AnalyzerController {
   constructor(private readonly analyzerService: AnalyzerService) {}
 
   @Post('/start')
-  analyze(@Body() req: StartAnalyzerRequest) {
+  start(@Body() req: StartAnalyzerRequest) {
     return this.analyzerService.start(req);
   }
 }
